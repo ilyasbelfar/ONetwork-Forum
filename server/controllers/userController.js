@@ -212,7 +212,7 @@ module.exports = {
           if (result) {
             await fs.unlink(req.files.avatar.tempFilePath);
             user.avatar.public_id = result.public_id;
-            user.avatar.url = result.url;
+            user.avatar.url = result.secure_url;
           }
         }
         if (req?.files?.cover) {
@@ -259,7 +259,7 @@ module.exports = {
           if (result) {
             await fs.unlink(req.files.cover.tempFilePath);
             user.cover.public_id = result.public_id;
-            user.cover.url = result.url;
+            user.cover.url = result.secure_url;
           }
         }
       }
