@@ -1,0 +1,9 @@
+code --install-extension christian-kohler.path-intellisense
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension Equinusocio.vsc-community-material-theme
+code --install-extension Equinusocio.vsc-material-theme
+code --install-extension equinusocio.vsc-material-theme-icons
+code --install-extension esbenp.prettier-vscode
+code --install-extension formulahendry.auto-close-tag
+code --install-extension PKief.material-icon-theme
+code --install-extension PKief.material-product-icons

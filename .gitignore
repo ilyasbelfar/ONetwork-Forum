@@ -1,0 +1,5 @@
+
+.DS_Store
+server/.env
+*/node_modules
+settings.json
