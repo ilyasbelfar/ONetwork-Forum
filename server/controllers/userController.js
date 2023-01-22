@@ -10,7 +10,7 @@ module.exports = {
   getUserProfile: async (req, res) => {
     const { username } = req.params;
     try {
-      const user = await User.findOne({ username });
+      const user = await User.findOne({ username }, { __v: 0, password: 0 });
       return res.status(200).json(user);
     } catch (err) {
       console.log(err.message);
