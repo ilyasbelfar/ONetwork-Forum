@@ -1,6 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Varela+Round");
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
 
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+  opacity: 0.2;
+  transition: opacity 0s linear;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #5e6d7b;
+  opacity: 0.2;
+  transition: opacity 2s linear;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  opacity: 1;
+}
+
 * {
   box-sizing: border-box;
 }

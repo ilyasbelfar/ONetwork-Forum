@@ -118,5 +118,43 @@
     position: relative;
     text-align: center;
     top: -15px;
+    left: 0;
+    right: 0;
+  }
+
+  ul.profile-menu {
+    flex-direction: column;
+  }
+
+  main
+    .container
+    .profile
+    .profile-header
+    .profile-header-section
+    .profile-menu
+    .nav-link {
+    margin: auto !important;
+  }
+
+  main .container .profile .profile-info .tab-ui .comment-type {
+    display: none;
+  }
+
+  main .container .profile .profile-info .tab-ui .comment-brief {
+    padding: 5px !important;
+  }
+
+  main
+    .container
+    .profile
+    .profile-info
+    .tab-ui
+    .comment-brief
+    .comment-meta::after {
+    position: unset !important;
+  }
+
+  main .container .profile .profile-info .tab-ui .comment-brief .comment-meta {
+    overflow-x: auto;
   }
 }
