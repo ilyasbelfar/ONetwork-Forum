@@ -21,6 +21,7 @@ import UpvotedTab from "./components/Profile/Tabs/UpvotedTab";
 import EmailVerify from "./pages/EmailVerify";
 import ForgotPassword from "./pages/ForgotPassword";
 import ResetPassword from "./pages/ResetPassword";
+import NotFound from "./pages/NotFound";
 import "react-loading-skeleton/dist/skeleton.css";
 import "./App.css";
 import { useMemo } from "react";
@@ -35,6 +36,7 @@ const App = () => {
       <Router>
         <Header />
         <Routes>
+          <Route path="*" element={<NotFound />} />
           <Route
             path="/register"
             element={isAuth ? <Navigate replace to="/" /> : <Register />}
@@ -74,6 +76,7 @@ const App = () => {
               !isAuth ? <Navigate replace to="/login" /> : <EditProfile />
             }
           />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
     );

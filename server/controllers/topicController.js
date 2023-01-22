@@ -112,9 +112,8 @@ module.exports = {
     try {
       const { id } = req.params;
       const topic = await Topic.findById(id).populate("author", {
-        username: 1,
         _id: 0,
-        password: 0,
+        username: 1,
       });
       if (!topic) {
         return res.status(404).json({

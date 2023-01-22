@@ -99,8 +99,7 @@ module.exports = {
       res.cookie("refreshToken", refreshToken, {
         maxAge: 1000 * 60 * 60 * 24,
         httpOnly: true,
-        sameSite: "none",
-        secure: true,
+        sameSite: "Strict",
         path: "/refresh_token",
       });
 
@@ -148,8 +147,7 @@ module.exports = {
       res.cookie("refreshToken", newRefreshToken, {
         maxAge: expiration * 1000,
         httpOnly: true,
-        sameSite: "none",
-        secure: true,
+        sameSite: "Strict",
         path: "/refresh_token",
       });
 
@@ -172,8 +170,7 @@ module.exports = {
       res.cookie("refreshToken", "Onetwork Forum", {
         maxAge: -1,
         httpOnly: true,
-        sameSite: "none",
-        secure: true,
+        sameSite: "Strict",
         path: "/refresh_token",
       });
       return res.json({
