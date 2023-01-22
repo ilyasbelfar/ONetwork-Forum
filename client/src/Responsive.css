@@ -158,4 +158,22 @@
   main .container .profile .profile-info .tab-ui .comment-brief .comment-meta {
     overflow-x: auto;
   }
+
+  main .container .profile .profile-info .tab-ui .comment-brief .comment-date {
+    white-space: break-spaces;
+  }
+
+  .edit-profile form {
+    flex-direction: column;
+  }
+
+  .auth-form .card {
+    max-width: 100%;
+    margin: 0;
+    padding: 5px;
+  }
+
+  .auth-form .bg-wrapper {
+    padding: 0;
+  }
 }
