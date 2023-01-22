@@ -24,6 +24,7 @@ import ResetPassword from "./pages/ResetPassword";
 import NotFound from "./pages/NotFound";
 import "react-loading-skeleton/dist/skeleton.css";
 import "./App.css";
+import "./Responsive.css";
 import { useMemo } from "react";
 import { useSelector } from "react-redux";
 
