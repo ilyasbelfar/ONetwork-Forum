@@ -80,4 +80,13 @@
   main .container .topic-item .topic-item-content .topic-title {
     margin: 0 !important;
   }
+
+  .navbar-collapse {
+    margin: 1rem 0 0 0 !important;
+  }
+
+  header .navbar-collapse > div {
+    margin-left: unset;
+    margin-bottom: 1rem;
+  }
 }
