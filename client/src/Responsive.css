@@ -5,6 +5,8 @@
 
   main .container {
     max-width: 100%;
+    flex-direction: column;
+    padding: 5px;
   }
 
   main .container .row > div {
@@ -44,5 +46,9 @@
   main .container .left-sidebar .nav,
   main .container .right-sidebar .nav {
     margin-bottom: 4rem;
+  }
+
+  main .container .thread .topic-item-content .tags-container {
+    flex-direction: column;
   }
 }
