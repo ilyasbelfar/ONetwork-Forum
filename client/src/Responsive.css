@@ -1,15 +1,11 @@
 @media only screen and (max-width: 480px) {
   main {
-    padding: 0;
-    overflow-x: hidden;
+    padding: 0 !important;
   }
 
   main .container {
-    max-width: 100%;
-    flex-direction: column;
     padding: 5px;
   }
-
   main .container .row > div {
     padding: 0 5px;
   }
@@ -180,5 +176,28 @@
 
   .auth-form .bg-wrapper {
     padding: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .edit-profile form {
+    flex-direction: column;
+  }
+
+  main .container .edit-profile .left {
+    margin-left: 1rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    padding: 1rem;
+    overflow-x: hidden;
+  }
+
+  main .container {
+    max-width: 100%;
+    flex-direction: column;
+    padding: 5px;
   }
 }

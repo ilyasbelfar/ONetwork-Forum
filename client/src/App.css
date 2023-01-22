@@ -1783,6 +1783,7 @@ main .container .profile .profile-info .tab-ui .follow-brief button svg {
 
 main .container .edit-profile .left {
   text-align: center;
+  margin-left: 2rem;
 }
 
 form.floating .form-group {
