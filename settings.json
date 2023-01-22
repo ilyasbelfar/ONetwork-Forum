@@ -1,11 +1,13 @@
 {
-    "workbench.iconTheme": "eq-material-theme-icons-darker",
-    "workbench.colorTheme": "Material Theme Darker",
-    "editor.fontSize": 20,
-    "editor.fontFamily": "'Dank Mono', Consolas, 'Courier New', monospace",
-    "editor.formatOnSave": true,
-    "editor.wordWrap": "on",
-    "editor.cursorBlinking": "expand",
-    "editor.cursorSmoothCaretAnimation": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Material Theme Darker",
+  "editor.fontSize": 20,
+  "editor.fontFamily": "'Dank Mono', Consolas, 'Courier New', monospace",
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "on",
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "workbench.startupEditor": "none",
+  "workbench.productIconTheme": "material-product-icons"
 }
