@@ -51,4 +51,33 @@
   main .container .thread .topic-item-content .tags-container {
     flex-direction: column;
   }
+
+  main .container .thread .topic-item-content > div {
+    margin-bottom: 0 !important;
+  }
+
+  main .container .thread .add-comment {
+    padding: 10px;
+    padding-top: 15px !important;
+  }
+
+  main .container .thread .comments-container {
+    padding: 5px !important;
+    overflow: hidden;
+  }
+
+  main
+    .container
+    .thread
+    .comments-container
+    .comment
+    .comment-info
+    .comment-meta {
+    flex-direction: column !important;
+    align-items: unset !important;
+  }
+
+  main .container .topic-item .topic-item-content .topic-title {
+    margin: 0 !important;
+  }
 }
