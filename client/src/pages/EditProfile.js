@@ -1,6 +1,6 @@
 import { useEffect, useState, useMemo, useRef } from "react";
 import { Form, Row, Button, Col, Image, Container } from "react-bootstrap";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { getUserProfile } from "../redux/slices/profileSlice";
 import {
@@ -13,6 +13,7 @@ import SkeletonEditProfile from "../components/Skeletons/SkeletonEditProfile";
 
 const EditProfile = () => {
   const { username } = useParams();
+  const loggedUser = JSON.parse(localStorage.getItem("user"))?.username;
   const dispatch = useDispatch();
   const { user } = useSelector((state) => state.auth);
   const { profileIsLoading } = useSelector((state) => state.profile);
@@ -81,6 +82,8 @@ const EditProfile = () => {
 
   // eslint-disable-next-line
   return useMemo(() => {
+    if (loggedUser && loggedUser !== username)
+      return <Navigate to={`/user/${loggedUser}/edit`} />;
     if (profileIsLoading) return <SkeletonEditProfile />;
     if (!profileIsLoading && user && Object.entries(user).length > 0) {
       return (
