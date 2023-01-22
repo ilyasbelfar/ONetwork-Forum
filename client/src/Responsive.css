@@ -97,6 +97,11 @@
     margin-bottom: 1rem;
   }
 
+  header .navbar-collapse > div > a {
+    margin-right: unset;
+    margin-bottom: 1rem;
+  }
+
   .profile {
     padding: 10px !important;
   }
