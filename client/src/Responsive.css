@@ -81,6 +81,12 @@
     margin: 0 !important;
   }
 
+  header > .navbar > .container {
+    padding: 0;
+    max-width: 100%;
+    margin: 0;
+  }
+
   .navbar-collapse {
     margin: 1rem 0 0 0 !important;
   }
@@ -88,5 +94,29 @@
   header .navbar-collapse > div {
     margin-left: unset;
     margin-bottom: 1rem;
+  }
+
+  .profile {
+    padding: 10px !important;
+  }
+
+  main .container .profile .profile-header .user-profile-meta {
+    flex-direction: column;
+  }
+
+  main .container .profile .profile-header .user-profile-meta {
+    padding: 2rem 0;
+    text-align: center;
+  }
+
+  main
+    .container
+    .profile
+    .profile-header
+    .profile-header-section
+    .social-links {
+    position: relative;
+    text-align: center;
+    top: -15px;
   }
 }

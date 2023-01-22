@@ -83,6 +83,20 @@ const ProfileHeader = memo(() => {
             </div>
           </div>
           <div className="profile-header-section">
+            <div className="social-links">
+              <a
+                href={userProfile?.socialNetwork?.facebook}
+                className="facebook"
+              >
+                <RiFacebookFill />
+              </a>
+              <a href={userProfile?.socialNetwork?.twitter} className="twitter">
+                <RiTwitterFill />
+              </a>
+              <a href={userProfile?.socialNetwork?.github} className="github">
+                <RiGithubFill />
+              </a>
+            </div>
             <Nav as="ul" className="profile-menu">
               <Nav.Link
                 as={Link}
@@ -140,20 +154,6 @@ const ProfileHeader = memo(() => {
                 Followers
               </Nav.Link>
             </Nav>
-            <div className="social-links">
-              <a
-                href={userProfile?.socialNetwork?.facebook}
-                className="facebook"
-              >
-                <RiFacebookFill />
-              </a>
-              <a href={userProfile?.socialNetwork?.twitter} className="twitter">
-                <RiTwitterFill />
-              </a>
-              <a href={userProfile?.socialNetwork?.github} className="github">
-                <RiGithubFill />
-              </a>
-            </div>
           </div>
         </div>
       );
