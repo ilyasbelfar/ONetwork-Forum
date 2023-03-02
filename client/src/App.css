@@ -269,6 +269,7 @@ header .search-form .input-group-prepend {
 }
 
 main {
+  min-height: 100vh;
   margin-top: 90px;
   padding: 1rem;
 }
