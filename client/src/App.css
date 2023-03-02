@@ -2212,7 +2212,7 @@ div.message.info {
   margin-top: 70px;
   margin-left: 0;
   margin-right: 0;
-  height: 100%;
+  min-height: 100vh;
 }
 
 .auth-form .bg-wrapper {
