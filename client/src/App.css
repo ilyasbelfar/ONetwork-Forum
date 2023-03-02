@@ -31,19 +31,10 @@
   box-sizing: border-box;
 }
 
-html {
-  height: 100%;
-}
-
 body {
-  height: 100%;
   font-family: "Varela Round", sans-serif;
   color: #07142e;
   background: linear-gradient(205deg, #f0f5f9, #f1f0f8);
-}
-
-div#root {
-  height: 100%;
 }
 
 .form-control:disabled {
