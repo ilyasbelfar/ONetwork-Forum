@@ -10,7 +10,7 @@ const instance = axios.create({
 instance.interceptors.request.use(
   (config) => {
     if (config.delayed) {
-      return new Promise((resolve) => setTimeout(() => resolve(config), 3000));
+      return new Promise((resolve) => setTimeout(() => resolve(config), 1000));
     }
     return config;
   },
