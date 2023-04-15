@@ -28,6 +28,18 @@
 
 ---
 
+## <p align="center">💻 Used Technologies 💻</p>
+
+- ReactJS
+- ExpressJS
+- NodeJS
+- MongoDB
+- Redux
+- Redux Toolkit
+- React Bootstrap
+
+---
+
 ## <p align="center">❓ How to use ❓</p>
 
 <br>
